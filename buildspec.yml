@@ -1,15 +1,20 @@
 version: 0.2
 
 phases:
+  pre_build:
+    commands:
+       - echo build start------------
   build:
     commands:
        - mvn package
-#  post_build:
-#    commands:
+  post_build:
+    commands:
+       - echo build end------------
 #      - aws s3 cp target/java-war-demo.war s3://jossbie-california/devops/java-war-demo.war
 
 artifacts:
   files:
-    - target/java-war-demo.war
+       - "**/*"
+#    - target/java-war-demo.war
 #    - appspec.yml
 #    name: my-app-release
