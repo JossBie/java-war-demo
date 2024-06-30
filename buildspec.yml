@@ -14,7 +14,7 @@ phases:
 
 artifacts:
   files:
-       - "**/*"
+       - '**/*'
 #    - target/java-war-demo.war
 #    - appspec.yml
 #    name: my-app-release
