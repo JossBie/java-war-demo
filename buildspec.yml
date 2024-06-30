@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - mvn package
+#  post_build:
+#    commands:
+#      - aws s3 cp target/java-war-demo.war s3://jossbie-california/devops/java-war-demo.war
+
+artifacts:
+  files:
+    - target/java-war-demo.war
