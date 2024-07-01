@@ -16,6 +16,6 @@ artifacts:
   files:
 #       - '**/*'
     - target/java-war-demo.war
-    - Script/*
+    - Scripts/*
     - appspec.yml
 #    name: my-app-release
