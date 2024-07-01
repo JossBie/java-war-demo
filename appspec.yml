@@ -11,17 +11,8 @@ hooks:
 #    - location: Scripts/RunResourceTests.sh
 #      timeout: 180
   ApplicationStart:
-     - location: before-install
-      timeout: 30
-      runas: root
-      shell: bash
-      command: "echo 'Before install hook'"
-#    - location: /home/bielei/test.sh
-    - location: after-install
+    - location: Scripts/RestartService.sh
       timeout: 3600
-      runas: root
-      shell: bash
-      command: /home/bielei/test.sh
 #  ValidateService:
 #    - location: Scripts/MonitorService.sh
 #      timeout: 3600
