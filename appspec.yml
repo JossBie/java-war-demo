@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: target/java-war-demo.war
-    destination: /home/bielei/apache-tomcat-9.0.90/webapps/
+    destination: /home/bielei/apache-tomcat-9.0.91/webapps/
 hooks:
 #  BeforeInstall:
 #    - location: Scripts/UnzipResourceBundle.sh
